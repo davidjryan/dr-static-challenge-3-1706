@@ -34,15 +34,37 @@ aside {
 
 header {
   width: 100%;
-  height: 40vh;
+  height: 35vh;
   background-color: white;
   outline: 1px solid blue;
 }
 
+button {
+  border: 2px solid #EDF2F6;
+  background-color: white;
+
+  border-radius: 50%;
+}
+
 .top-bar-container {
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   outline: 1px solid blue;
+}
+
+.header-body {
+  display: flex;
+  height: 60%;
+  padding: 45px 25px 0 25px;
+}
+
+.header-title-container {
+  margin:
+}
+
+.header-body-buttons {
+  margin-left: auto;
+  margin-top: 25px;
 }
 
 main {
