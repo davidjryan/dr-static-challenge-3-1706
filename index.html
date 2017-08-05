@@ -3,69 +3,69 @@
   <head>
     <meta charset="utf-8">
     <title>Static Comp</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet-normalize" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <aside>
-      <nav class="sidebar-nav">
-        <img></img>
-        <p>Newton Bradley</p>
+      <nav class="sidebar-nav picture">
+        <p>Derpin Ryan</p>
       </nav>
-      <nav class="sidebar-nav">
+      <nav class="sidebar-nav navlist">
         <h4>Main</h4>
         <ul>
           <li>
-            <img src="" alt="">
+            <img src="assets/side-nav-home.svg" alt="">
             <a>Homes</a>
           </li>
           <li>
-            <img src="" alt="">
+            <img src="assets/side-nav-job.svg" alt="">
             <a>Jobs</a>
           </li>
           <li>
-            <img src="" alt="">
+            <img src="assets/side-nav-task.svg" alt="">
             <a>Tasks</a>
           </li>
           <li>
-            <img src="" alt="">
+            <img src="assets/side-nav-resume.svg" alt="">
             <a>Resume</a>
           </li>
           <li>
-            <img src="" alt="">
+            <img src="assets/side-nav-calendar.svg" alt="">
             <a>Calendar</a>
           </li>
         </ul>
       </nav>
-      <nav class="sidebar-nav">
+      <nav class="sidebar-nav navlist">
         <h4>Admin</h4>
         <ul>
           <li>
-            <img src="" alt="">
+            <img src="assets/side-nav-user.svg" alt="">
             <a>Users</a>
           </li>
           <li>
-            <img src="" alt="">
+            <img src="assets/side-navlocation-light.svg" alt="">
             <a>Locations</a>
           </li>
           <li>
-            <img src="" alt="">
+            <img src="assets/side-nav-workflows.svg" alt="">
             <a>Workflows</a>
           </li>
           <li>
-            <img src="" alt="">
+            <img src="assets/side-nav-jobboards.svg" alt="">
             <a>Job Board</a>
           </li>
           <li>
-            <img src="" alt="">
+            <img src="assets/side-nav-social.svg" alt="">
             <a>Social</a>
           </li>
         </ul>
       </nav>
-      <nav class="sidebar-nav">
+      <nav class="sidebar-nav navlist">
         <h4>Catagories</h4>
-        <ul>
+        <ul class="checkbox">
           <li>
             <img src="" alt="">
             <a>Administrative</a>
@@ -88,27 +88,112 @@
   <div class="div-prime">
       <header>
         <nav class="top-bar-container">
-          <div><img src="" alt=""></div>
-          <input class="searchbar"><img src="" alt=""></input>
-          <div><img src="" alt=""></div>
-          <div><img src="" alt=""></div>
-          <div><img src="" alt=""></div>
+          <div class="div-square"><img src="assets/025-list.svg" alt=""></div>
+          <div class="search-container">
+            <input class="searchbar" placeholder="Search"></input>
+          </div>
+          <div class="div-square"><img src="assets/023-add-user.svg" alt=""></div>
+          <div class="div-square"><img src="assets/019-task-complete.svg" alt=""></div>
+          <div class="div-square"><img src="assets/symbols.svg" alt=""></div>
         </nav>
         <section class="header-body">
           <article class='header-title-container'>
-            <p>Customer Service Representative</p>
-            <img src="" alt="">
-            <p>San Francisco, CA - <span>Preview this post</span></p>
+            <p class="title">Customer Service Representative</p>
+            <p class="location"><img src="assets/heading-location-arrow-dark.svg" alt=""> San Francisco, CA - <span>Preview this post</span></p>
           </article>
           <nav class='header-body-buttons'>
-            <button>x</button>
-            <button>x</button>
-            <button>x</button>
-            <button>x</button>
+            <button class="open"><img src="assets/003-green-dot.svg" alt="">OPEN</button>
+            <button class="header-button"><img src="assets/ribbon.svg" alt=""></button>
+            <button class="header-button"><img src="assets/heading-edit-pencil.svg" alt=""></button>
+            <button class="header-button"><img src="assets/heading-delete-trash.svg" alt=""></button>
+          </nav>
+          <nav class="tabnav">
+            <ul>
+              <li>Summary</li>
+              <li>Applicants</li>
+              <li>Job Board</li>
+              <li>Interviews</li>
+              <li>Activity</li>
+              <li>Broadcast</li>
+              <li>Notifications</li>
+            </ul>
           </nav>
         </section>
     </header>
-    <main>
+    <main class="lower-section-container">
+      <section class="graph-container">
+        <section class="circle-graphs-section">
+          <div class="circle-graph">
+            <div class="graph applicants-graph text-container">
+              <div class="applicants-text-container text-container"><p class="number">3,154</p><p class="category">applicants</p>
+              </div>
+            </div>
+            <div class="graph interviews-graph">
+              <div class="interviews-text-container text-container"><p class="number">1,546</p><p class="category">interviews</p>
+              </div>
+            </div>
+            <div class="graph forwards-graph">
+              <div class="forwards-text-container text-container"><p class="number">912</p><p class="category">forwards</p>
+              </div>
+            </div>
+          </div>
+          <button class="graph-totals-button" type="button" name="button">TOTALS Out of 5,231 views</button>
+        </section>
+        <section class="bar-graph-section">
+        <div><img class="bar-graph" src=assets/bar-chart.png alt="bar-graph.png">
+
+        </div>
+          <button class="graph-applicants-button" type="button" name="button">applicants/day</button>
+      </section>
+    </section>
+    <section>
+
+    </section>
+    <div class="divider"><hr /><img class="dividerimg" src="assets/001-up-chevron-button.svg" alt=""><hr /></div>
+    <section class="table-outter-container">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">JOB DESCRIPTION
+              <button class="table-edit-button" type="button" name="button">EDIT</button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>POSITION TITLE</th>
+            <td>Graphic Designer, Freelance Artist</td>
+          </tr>
+          <tr>
+            <th>LOCATION</th>
+            <td>San Francisco, CA</td>
+          </tr>
+          <tr>
+            <th>EMPLOYMENT TYPE</th>
+            <td>Full-time</td>
+          </tr>
+          <tr>
+            <th>STATUS</th>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <th>DESCRIPTION</th>
+            <td>Jianbing cornhole seitan, cronut echo park cloud bread aesthetic scenester quinoa kombucha taxidermy. Master cleanse etsy ugh, meggings palo santo put a bird on it cardigan godard four loko pour-over. Tattooed selfies flexitarian, bitters bicycle rights yuccie polaroid retro franzen. Locavore swag pabst flexitarian. Pug iPhone locavore, stumptown green juice 90's selvage yr XOXO helvetica marfa chillwave. </td>
+          </tr>
+          <tr>
+            <th>HIRING LEAD</th>
+            <td><img class="table-photo derp-diplin" src="" alt="hr manager picture">Derp Diplin</td>
+          </tr>
+          <th>APPROVED SALARY</th>
+          <td>$100,000</td>
+        </tbody>
+      </table>
+      <section class="right-side-links">
+        
+      </section>
+    </section>
+
+
     </main>
   </div>
   </body>
