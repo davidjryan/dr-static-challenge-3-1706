@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 aside {
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 15%;
   height: 1731px;
@@ -59,13 +59,14 @@ aside {
 }
 
 .navlist {
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 15px;
+  padding-left: 30px;
   border-top: 1px solid #2E394B;
+  border-top-width: medium;
 }
 
 .navlist li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 ul {
@@ -77,9 +78,7 @@ ul {
 h4 {
   color: #525F72;
   font-size: 14px;
-  margin-left: 10px;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin: 5px 0 10px 0;
 }
 
 a {
@@ -89,12 +88,16 @@ a {
 }
 
 li {
-  margin-left: 10px;
 }
 
-li img {
-  height: 12px;
-  width: 12px;
+li img,
+.header-title-container img,
+.open img,
+.header-button img,
+.social img {
+
+  height: 16px;
+  width: 16px;
 }
 
 .checkbox a {
@@ -111,10 +114,10 @@ header {
 header button {
   border: 2px solid #E6E6E8;
   background-color: white;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 75%;
+  margin-right: 15px;
 }
 
 .top-bar-container {
@@ -132,7 +135,8 @@ header button {
   height: 98%;
 }
 
-.top-bar-container div,input {
+.top-bar-container div,
+input {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,7 +147,7 @@ header button {
   height: 7.9vh;
   width: 100%;
   border: none;
-  padding-left: 10px;
+  padding-left: 20px;
   font-size: 18px;
 }
 
@@ -153,31 +157,26 @@ header button {
 }
 
 .top-bar-container img {
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
 }
 
 .header-body {
   display: flex;
   flex-wrap: wrap;
-  height: 53%;
-  padding: 6% 25px 0 25px;
+  padding: 75px 5% 0 5%;
 }
 
 .header-title-container {
 }
 
-.header-title-container img {
-  height: 10px;
-  width: 10px;
-}
 
 .title {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .location {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .header-title-container span {
@@ -186,35 +185,34 @@ header button {
 
 .header-body-buttons {
   display: flex;
-  width: 250px;
+  justify-content: space-between;
+  width: 275px;
   margin-left: auto;
   margin-top: 15px;
 }
 
 .open {
   display: flex;
-  width: 62px;
-  border-radius: 30%;
+  width: 80px;
+  border-radius: 35%;
   color: #A4A9B2;
+  font-size: 14px;
   font-weight: bold;
-  padding-top: 3px;
+  padding: 5px 5px
 }
 
 .open img {
-  margin: 2.5px 2px;
-  height: 10px;
-  width: 10px;
+  margin: 2.5px 4px;
 }
 
 .header-button img {
-  height: 10px;
-  width: 10px;
   padding: 2px 2px 0 0;
 }
 
 .tabnav {
   align-self: flex-end;
   margin-right: auto;
+  margin-top: 119px;
 }
 
 .tabnav ul {
@@ -228,11 +226,11 @@ header button {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: 5%;
+  height: 40px;
   margin: 0 40px 0 0;
-  color: rgb(153,158,178);
+  color: #999eb2;
   border-bottom: 3px solid transparent;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -285,21 +283,22 @@ main hr {
 .graph-container {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  height: 300px;
+
 }
 
 .graph {
   align-items: center;
   border: 10px solid;
   border-color: black;
-  border-radius: 100px;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   font-size: 12px;
-  height: 150px;
-  width: 150px;
+  height: 225px;
+  width: 225px;
 }
 
 .applicants-graph {
@@ -351,14 +350,15 @@ main hr {
   margin-bottom: 10px;
 }
 
-.circle-graphs-section, .bar-graph-section {
+.circle-graphs-section,
+.bar-graph-section {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
 .bar-graph {
-  height: 200px;
+  height: 250px;
   padding-left: 30px;
 }
 
@@ -401,12 +401,13 @@ tr {
 }
 
 thead {
+  display: flex;
   background-color: #6f7E95;
 }
 
 thead th {
   color:#FFF;
-  padding-left: 25px;
+  width: 90%;
 
 }
 
@@ -433,17 +434,17 @@ tbody th {
 }
 
 thead tr {
-  height: 60px;
+  padding: 28px 0;
+
 }
 
 tbody {
-  background:#FFF;
-  color:#6F7E95;
+  background: #FFF;
+  color: #6F7E95;
 }
 
 th {
 text-align: left;
-text-transform: uppercase;
 }
 
 tbody tr {
@@ -473,9 +474,77 @@ tbody th {
 }
 
 .right-side-links {
-  width: 425px;
-  height: 500px;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  background-color: transparent;
   margin-left: auto;
+}
+
+.right-side-links li {
+  display: flex;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  border: none;
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+  color: #FFF;
+}
+
+.facebook {
+  background-color: #4A6EC2;
+}
+
+.twitter {
+  background-color: #02ABF0;
+  margin: 25px 0;
+}
+
+.linkedin {
+  background-color: #0480BC;
+}
+
+.social img {
+}
+
+.lower-link-container {
+  padding: 30px 0;
+}
+
+.lower-link-container img {
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.button-widget-container {
+  border-top: 1px solid #D8DDE3;
+  border-bottom: 1px solid #D8DDE3;
+}
+
+.right-side-text {
+  margin: 15px 0 0 0;
+  font-size: 12px;
+}
+
+.right-side-text.copy {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  background-color: white;
+  padding-left: 15px;
+  margin-top: 25px;
+}
+
+.copy button {
+  border: none;
+  margin-left: auto;
+  height: 42px;
+  width: 42px;
+  background-color: #43BCC4;
+  color: #FFF;
 
 }
