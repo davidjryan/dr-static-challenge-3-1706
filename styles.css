@@ -49,13 +49,13 @@ aside {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 10px auto 50px auto;
+  margin: 40px auto 50px auto;
 }
 
 .picture p {
-  margin-top: 130px;
+  margin-top: 135px;
   color: #A7B2C4;
-  font-size: 14xxxpx;
+  font-size: 16px;
 }
 
 .navlist {
@@ -76,18 +76,24 @@ ul {
 }
 
 h4 {
-  color: #525F72;
+  color: #999EB2;
   font-size: 14px;
   margin: 5px 0 10px 0;
 }
 
-a {
+a,
+label {
   color: #A7B2C4;
   font-size: 16px;
   margin-left: 5px;
 }
 
+label {
+  font-size: 14px;
+}
+
 li {
+  display: flex;
 }
 
 li img,
@@ -131,7 +137,6 @@ header button {
   display: flex;
   align-items: center;
   width: 80%;
-  /*padding-left: 20px;*/
   height: 98%;
 }
 
@@ -164,7 +169,7 @@ input {
 .header-body {
   display: flex;
   flex-wrap: wrap;
-  padding: 75px 5% 0 5%;
+  padding: 62px 5% 0 5%;
 }
 
 .header-title-container {
@@ -213,6 +218,9 @@ input {
   align-self: flex-end;
   margin-right: auto;
   margin-top: 119px;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
 .tabnav ul {
@@ -424,13 +432,22 @@ tbody th {
   color: #FFF;
   font-size: 14px;
   height: 20px;
-  margin-left: 20px;
+  margin-left: 12%;
   width: 60px;
   text-transform: uppercase;
 }
 
-.table-edit-button:hover {
+.hidden-text {
+  color: transparent;
+  background-image: none;
+}
+
+.table-edit-button-v2:hover {
   background: #D6E0E8;
+}
+
+.table-edit-button-v2:focus {
+  outline: 0;
 }
 
 thead tr {
@@ -462,8 +479,8 @@ tbody th {
 }
 
 .table-photo {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 60px;
   margin-right: 20px;
   border-radius: 100%;
 }
@@ -509,6 +526,7 @@ tbody th {
 }
 
 .social img {
+
 }
 
 .lower-link-container {
@@ -546,5 +564,175 @@ tbody th {
   width: 42px;
   background-color: #43BCC4;
   color: #FFF;
+}
 
+input[type=checkbox] {
+  -webkit-appearance: none;
+  position: relative;
+  margin-right: 12px;
+  padding: 8px;
+}
+
+input[type=checkbox]:checked:after {
+  content: '\2714';
+  position: absolute;
+  left: 2px;
+  top: 0px;
+}
+
+.yellow {
+  background-color: rgb(252,218,4);
+}
+
+.blue {
+  background-color: rgb(19,164,250);
+}
+
+.red {
+  background-color: rgb(231,27,97);
+}
+
+.green {
+  background-color: rgb(1, 171, 137);
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+  .tabnav {
+    display: none;
+  }
+
+  .div-square {
+    width: 25%;
+  }
+
+  .graph {
+    height: 130px;
+    width: 130px;
+  }
+
+  .bar-graph {
+    height: 180px;
+  }
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .div-square {
+    width: 15%;
+  }
+
+  .header-body {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .header-body-buttons {
+    margin: 25px auto 54px auto;
+  }
+
+  .tabnav {
+    margin: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+
+  }
+
+  .tabnav li {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+
+  .graph {
+    height: 160px;
+    width: 160px;
+  }
+
+  .bar-graph {
+    height: 225px;
+  }
+
+  .table-outter-container {
+    flex-direction: column;
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .right-side-links {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .div-square {
+    width: 10%;
+  }
+
+  .table-outter-container {
+    flex-direction: column;
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .right-side-links {
+    margin: auto;
+    width: 80%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .location {
+    font-size: 16px;
+  }
+
+  /*.header-body-buttons {
+    width: 200px;
+  }
+
+  .header-button {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+
+  .open {
+    width: 70px;
+    font-size: 12px;
+    height: 30px;
+  }*/
+
+  li img,
+  .header-title-container img,
+  .open img,
+  .header-button img,
+  .social img {
+
+    height: 12px;
+    width: 12px;
+  }
+}
+
+/* Large desktop */
+@media (max-width: 1300px) {
+  aside {
+    display: none;
+  }
+
+  .div-prime {
+    width: 100%;
+  }
 }
